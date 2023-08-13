@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(22, 54, 43);
+}
+
+#username-container {
+    display: flex;
+    flex-direction: row;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #favorites-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #rated-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+#change-username-button {
+    border: none;
+    background-color: grey;
+    color: rgba(224, 213, 125, 1);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 45px 5px;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+}
+#user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    }
+#games-info {
+display: flex;
+flex-direction: column;
+}    
+
+#favorite-games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#completed-games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+    #profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    }
+
+#username {
+    color: white;
+ background-color: rgba(0, 0, 0, .5);
+ font-size: 30px;
+width: max-content;
+height: max-content;
+}    
+
+#favorite1 {
+position: relative;
+}
+
+#favorite2 {
+    position: relative;
+    }
+
+    #favorite3 {
+        position: relative;
+        }
+
+        #favorite4 {
+            position: relative;
+            }
+

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 2,
+        "username": "verumek",
+        "password": "$2y$10$WE4SlcNxYUBaqHtlqEjeNOK8ABvYGNMKfSJhxXS9hqstHQpjQ3djO",
+        "favoriteGames": [],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": ""
+    },
+    {
+        "id": 3,
+        "username": "asfsafas",
+        "password": "$2y$10$SilyZcdeF7tMVgox\/GfvsOUrfRM55xNDidnk4BUBdYNFkpKw21TyW",
+        "favoriteGames": [],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": ""
+    },
+    {
+        "id": 4,
+        "username": "fasfsa",
+        "password": "$2y$10$dZuNn0PEEFiHv0PHn2Lt1OupaMslR3ExnhMijuDvs8m2UXjLyhYea",
+        "favoriteGames": [],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": ""
+    },
+    {
+        "id": 3,
+        "username": "damianek",
+        "password": "$2y$10$plCCW0kA1g3mUQ.Yrs.Z1OOee9ESIGV6gUUAgzezYWsIslGKlWvFu",
+        "favoriteGames": [],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": " dog2.jpg"
+    }
+]
