@@ -13,7 +13,9 @@
         "username": "asfsafas",
         "password": "$2y$10$SilyZcdeF7tMVgox\/GfvsOUrfRM55xNDidnk4BUBdYNFkpKw21TyW",
         "favoriteGames": [],
-        "completedGames": [],
+        "completedGames": [
+            "1"
+        ],
         "ratedGames": [],
         "profilePicture": ""
     },
@@ -27,12 +29,12 @@
         "profilePicture": ""
     },
     {
-        "id": 3,
+        "id": 5,
         "username": "damianek",
         "password": "$2y$10$plCCW0kA1g3mUQ.Yrs.Z1OOee9ESIGV6gUUAgzezYWsIslGKlWvFu",
         "favoriteGames": [],
         "completedGames": [],
         "ratedGames": [],
-        "profilePicture": " dog2.jpg"
+        "profilePicture": "dog2.jpg"
     }
 ]

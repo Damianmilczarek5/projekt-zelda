@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -46,36 +46,27 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["id"])) {
 ?>  
 
 <div class="game-details">
+    
     <img src="<?php echo $selectedGame["image"]; ?>" alt="<?php echo $selectedGame["name"]; ?>" class="game-image">
     <div class="game-description">
         <h2><?php echo $selectedGame["name"]; ?></h2>
         <h3>Description</h3>
         <p><?php echo $selectedGame["description"]; ?></p>
+
+        <p>Release Date: <?php echo $selectedGame["release_date"]; ?></p>
+    <button id="addCompletedGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to Completed Games</button>
+    <button id="addFavoriteGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to favorite Games</button>
+
     </div>
 </div>
 <!-- ... Your existing code ... -->
 
 <div class="game-info">
     <p>Release Date: <?php echo $selectedGame["release_date"]; ?></p>
-    <div class="rating">
-        <p>Rating: <?php echo $selectedGame["rating"]; ?> ★</p>
-        <div class="user-rating">
-            <label for="rating">Rate this game:</label>
-            <select id="rating" name="rating">
-                <option value="1">1 star</option>
-                <option value="2">2 stars</option>
-                <option value="3">3 stars</option>
-                <option value="4">4 stars</option>
-                <option value="5">5 stars</option>
-            </select>
-            <button id="submit-rating">Submit</button>
-        </div>
     </div>
-    <p>Players: <?php echo $selectedGame["players"]; ?></p>
 </div>
 
 <script src="scripts.js"></script>
-<script src="createGameIcons.js"></script>
 </body>
 </html>
 

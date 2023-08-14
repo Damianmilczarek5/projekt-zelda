@@ -24,23 +24,14 @@ p {
 }
 
 #gameList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px; /* Spacing between cards */
+  max-width: 1300px;
   margin: 20px auto;
 }
 
-.game-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
 .game-card {
-  width: calc(25% - 20px); /* 25% width for four cards in a row with 20px spacing between */
-  margin-bottom: 20px;
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -218,7 +209,8 @@ a {
 margin-left: 20px;
 }
 
-#siteTitle {
+header {
   font-family: 'The Wild Breath of Zelda', sans-serif;        
- color: rgba(224, 213, 125, 1)                                       
+  color: rgba(224, 213, 125, 1)                                       
+
 }

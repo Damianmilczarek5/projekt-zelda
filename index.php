@@ -18,7 +18,7 @@
 <head>
     <title>Game Library</title>
     <link href="https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <?php include 'header.php'; ?>

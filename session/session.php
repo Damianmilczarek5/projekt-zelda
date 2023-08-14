@@ -21,5 +21,23 @@ function getCurrentUser() {
     return null;
 }
 
- $currentUser = getCurrentUser(); 
+function getCurrentUserId() {
+    if (isUserLoggedIn()) {
+        $username = $_SESSION['user'];
+        $jsonData = file_get_contents('login2/data.json');
+        $data = json_decode($jsonData, true);
+
+        foreach ($data as $user) {
+            if ($user['username'] === $username) {
+                $cUId = $user["id"]; 
+                return $cUId;
+            }
+        }
+    }
+
+    return null;
+}
+
+$currentUser = getCurrentUser();
+$currentUserId = getCurrentUserId();
 ?>
