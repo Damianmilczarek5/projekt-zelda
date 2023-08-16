@@ -1,40 +1,40 @@
 [
     {
-        "id": 2,
-        "username": "verumek",
-        "password": "$2y$10$WE4SlcNxYUBaqHtlqEjeNOK8ABvYGNMKfSJhxXS9hqstHQpjQ3djO",
-        "favoriteGames": [],
-        "completedGames": [],
-        "ratedGames": [],
-        "profilePicture": ""
-    },
-    {
-        "id": 3,
-        "username": "asfsafas",
-        "password": "$2y$10$SilyZcdeF7tMVgox\/GfvsOUrfRM55xNDidnk4BUBdYNFkpKw21TyW",
-        "favoriteGames": [],
-        "completedGames": [
-            "1"
-        ],
-        "ratedGames": [],
-        "profilePicture": ""
-    },
-    {
-        "id": 4,
-        "username": "fasfsa",
-        "password": "$2y$10$dZuNn0PEEFiHv0PHn2Lt1OupaMslR3ExnhMijuDvs8m2UXjLyhYea",
-        "favoriteGames": [],
-        "completedGames": [],
-        "ratedGames": [],
-        "profilePicture": ""
-    },
-    {
         "id": 5,
         "username": "damianek",
         "password": "$2y$10$plCCW0kA1g3mUQ.Yrs.Z1OOee9ESIGV6gUUAgzezYWsIslGKlWvFu",
-        "favoriteGames": [],
-        "completedGames": [],
+        "favoriteGames": [
+            1,
+            10
+        ],
+        "completedGames": [
+            1,
+            19,
+            11
+        ],
         "ratedGames": [],
         "profilePicture": "dog2.jpg"
+    },
+    {
+        "id": 4,
+        "username": "BeaFart",
+        "password": "$2y$10$Dv1WgUy7ZnrSSchpw55o4enIvfE4zSNTLXRx.uhIxD83IpvRIcHC.",
+        "favoriteGames": [
+            7
+        ],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": ""
+    },
+    {
+        "id": 2,
+        "username": "Verumek",
+        "password": "$2y$10$p1BqKZKNuIt8g0ypW\/8tq.3EK\/nrEVKyNa9q6nl8XMwHnqZJuQHfy",
+        "favoriteGames": [
+            3
+        ],
+        "completedGames": [],
+        "ratedGames": [],
+        "profilePicture": "dog1.jpg"
     }
 ]

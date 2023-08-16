@@ -4,9 +4,8 @@
 		$user = new RegisterUser($_POST['username'], $_POST['password']);
 
 		if ($user->success === "Your registration was successful") {
-			// Use JavaScript to redirect to login.php
 			echo '<script>window.location.href = "login.php";</script>';
-			exit(); // Make sure to exit after the redirection
+			exit();
 	}
 }
 ?>
@@ -16,7 +15,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="styles/styles.css">
+	 <link rel="stylesheet" href="styles.css">
 	<title>Register form</title>
 </head>	
 <body>

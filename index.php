@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['user'])){
-		header("location: login.php");	exit();
+		header("location: login2/login.php");	exit();
 	}
 
     if (isset($_SESSION['profilePicture'])) {

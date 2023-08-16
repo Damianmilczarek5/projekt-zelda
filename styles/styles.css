@@ -2,9 +2,9 @@
   --green: rgb(22, 54, 43);
   --gold: rgba(224, 213, 125, 1) 
 }
+
 body {
-  font-family: "Arial", sans-serif;
-  background-color: var(--green);
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;   background-color: var(--green);
   color: var(--gold);
   margin: 0;
   padding: 0;
@@ -89,24 +89,16 @@ p {
 
 .rating span {
   font-size: 18px;
-  color: #ffd700; /* Gold color for stars */
+  color: #ffd700;
   margin: 0 2px;
 }
 
-/* Global styles */
-body {
-  font-family: "Arial", sans-serif;  
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-/* Header styles */
 header {
-  background-image: url("header-background.jpg");
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(5px); /* Adds the blurry effect (use appropriate value) */
+  background-color: rgba(33, 61, 52, 0.7);
+  backdrop-filter: blur(5px);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -181,14 +173,11 @@ a {
   margin: 5px 0;
 }
 
-.rating {
-  display: flex;
-  align-items: center;
-}
-
-.rating p {
-  margin: 0;
-  margin-right: 5px;
+#logOut {
+  color: var(--gold);
+  text-decoration: none;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 .game-description {

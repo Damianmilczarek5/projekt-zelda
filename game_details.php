@@ -10,6 +10,7 @@
     <?php
 
 require_once("functions/functions.php");
+require_once("session/session.php");
 ini_set("display_errors", 1);
 
 $filename = "game_database.json";
@@ -54,12 +55,20 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["id"])) {
         <p><?php echo $selectedGame["description"]; ?></p>
 
         <p>Release Date: <?php echo $selectedGame["release_date"]; ?></p>
-    <button id="addCompletedGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to Completed Games</button>
-    <button id="addFavoriteGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to favorite Games</button>
+    <?php if (in_array($selectedGame["id"], $currentUser["completedGames"])) { ?>
+        <button id="removeCompleted" data-game-id="<?php echo $selectedGame["id"]; ?>">Remove from Completed Games</button>
+    <?php } else { ?>
+        <button id="addCompletedGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to Completed Games</button>
+    <?php } ?>
+
+    <?php if (in_array($selectedGame["id"], $currentUser["favoriteGames"])) { ?>
+        <button id="removeFavoriteGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Remove from Favorite Games</button>
+    <?php } else { ?>
+        <button id="addFavoriteGame" data-game-id="<?php echo $selectedGame["id"]; ?>">Add to Favorite Games</button>
+    <?php } ?>
 
     </div>
 </div>
-<!-- ... Your existing code ... -->
 
 <div class="game-info">
     <p>Release Date: <?php echo $selectedGame["release_date"]; ?></p>

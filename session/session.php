@@ -1,9 +1,16 @@
 <?php
 session_start();
 
+if(isset($_GET['logout'])){
+    unset($_SESSION['user']);
+    header("location: login2/login.php");	exit();
+}
+
 function isUserLoggedIn() {
     return isset($_SESSION['user']);
 }
+
+
 
 function getCurrentUser() {
     if (isUserLoggedIn()) {

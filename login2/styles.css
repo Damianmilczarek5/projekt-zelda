@@ -1,14 +1,26 @@
+:root {
+	--green: rgb(22, 54, 43);
+	--gold: rgba(224, 213, 125, 1) 
+  }
+  
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
+}
+
+a {
+	text-decoration: none;
+	color: var(--green);
 }
 
 body{
 	font-family: sans-serif;
 	min-height: 100vh;
 	color: #555;
-	background-color: coral;
+	background-image: url(../images/extra_images/background.jpg);
+	background-size: cover;
 }
 
 form, .content{
@@ -18,7 +30,7 @@ form, .content{
 	border:  thin solid #e4e4e4;
 	padding: 40px 30px;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 form h2{
@@ -30,7 +42,7 @@ form h4{
 	font-weight: normal;
 }
 form h4 span{
-	color:  coral;
+	color:  var(--green);
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -64,7 +76,7 @@ form select{
 form input:focus
 {
 	outline: none;
-	border: thin solid coral;
+	border: thin solid var(--green);
 }
 
 form textarea{

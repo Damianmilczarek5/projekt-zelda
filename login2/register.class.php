@@ -1,6 +1,5 @@
 <?php 
 class RegisterUser{
-	// Class properties
 	private $username;
 	private $raw_password;
 	private $encrypted_password;
@@ -8,7 +7,7 @@ class RegisterUser{
 	public $success;
 	private $storage = "data.json";
 	private $stored_users;
-	private $new_user; // array 
+	private $new_user; 
 
 
 	public function __construct($username, $password){
@@ -30,7 +29,7 @@ class RegisterUser{
 			'favoriteGames' => [],
         'completedGames' => [],
         'ratedGames' => [],
-        'profilePicture' => ''
+        'profilePicture' => 'dog1.jpg'
 		];
 
 		if($this->checkFieldValues()){
