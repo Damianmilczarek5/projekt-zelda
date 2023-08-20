@@ -29,6 +29,6 @@
         </span>
     </div>
 </header>
-<!-- ... (rest of your HTML content) ... -->
+
 </body>
 </html>

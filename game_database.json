@@ -4,7 +4,10 @@
     "name": "The Legend of Zelda",
     "release_date": "1986",
     "description": "The first game of The Legend of Zelda series, it is set in the fantasy land of Hyrule and centers on an elf-like boy named Link, who aims to collect the eight fragments of the Triforce of Wisdom in order to rescue Princess Zelda from the antagonist Ganon. During the course of the game, the player controls Link from a top-down perspective and navigates throughout the overworld and dungeons, collecting weapons, defeating enemies and uncovering secrets along the way.",
-    "consoles": ["Family Computer Disk System", "Nintendo Entertainment System"],
+    "consoles": [
+      "Family Computer Disk System",
+      "Nintendo Entertainment System"
+    ],
     "reviews": [2],
     "image": "/images/boxart_images/edited/legendofzelda.jpg"
   },
@@ -180,5 +183,3 @@
     "image": "/images/boxart_images/edited/tearsofthekingdom.jpg"
   }
 ]
-
-

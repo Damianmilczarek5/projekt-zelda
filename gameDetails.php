@@ -1,12 +1,12 @@
 <?php
-// Include necessary files and configurations for your data retrieval
+
 require_once("session/session.php");
 
 // Retrieve the game ID from the query parameter
 $gameId = $_GET["id"];
 
 // Example: Load the games data from a JSON file
-$gamesData = file_get_contents('game_database.json'); // Replace with your data source
+$gamesData = file_get_contents('game_database.json'); 
 
 $games = json_decode($gamesData, true);
 

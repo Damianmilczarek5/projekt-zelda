@@ -10,8 +10,6 @@ async function fetchCompletedGames() {
   return completedGames;
 }
 
-// ... Your existing code ...
-
 async function removeGameFromCompleted(gameId) {
   try {
     const response = await fetch(`removeCompleted.php?id=${gameId}`, {
@@ -54,11 +52,11 @@ async function displayCompletedGames() {
 
       // Display the game image
       const gameImage = document.createElement("img");
-      gameImage.src = gameDetails.image; // Adjust this based on your game details structure
+      gameImage.src = gameDetails.image; 
       gameLink.appendChild(gameImage);
       // Display the game name
       const gameName = document.createElement("p");
-      gameName.textContent = gameDetails.name; // Adjust this based on your game details structure
+      gameName.textContent = gameDetails.name; 
       gameLink.appendChild(gameName);
 
       gameContainer.appendChild(gameLink);
