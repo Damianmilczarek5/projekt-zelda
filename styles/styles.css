@@ -58,16 +58,6 @@ p {
   margin: 5px 0;
 }
 
-.game-card .rating {
-  display: flex;
-  align-items: center;
-}
-
-.game-card .rating p {
-  margin: 0;
-  margin-right: 5px;
-}
-
 .game-card .btn-container {
   display: flex;
   justify-content: flex-end;
@@ -82,17 +72,6 @@ p {
   border-radius: 4px;
 }
 
-.rating {
-  display: flex;
-  justify-content: center;
-}
-
-.rating span {
-  font-size: 18px;
-  color: #ffd700;
-  margin: 0 2px;
-}
-
 
 header {
   background-size: cover;
@@ -103,11 +82,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+  color: rgba(224, 213, 125, 1);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .site-name {
   font-size: 24px;
-  color: #fff;
+  color: rgba(255, 223, 97, 1);
+  text-shadow: 0 0 5px rgba(255, 223, 97, 1);
+  transition: color 0.5s, text-shadow 0.5s;
+}
+
+.site-name:hover {
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
 }
 
 nav ul {
@@ -203,3 +193,44 @@ header {
   color: rgba(224, 213, 125, 1)                                       
 
 }
+
+header a:hover {
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
+}
+
+
+.game p:hover {
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
+}
+
+.username h2 {
+  color: rgba(224, 213, 125, 1)  
+}
+
+button {
+  position: relative;
+  background: #444;
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+  transition: 0.2s;
+  margin: 10px;
+}
+
+button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  animation: box 3s infinite;
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
+}
+

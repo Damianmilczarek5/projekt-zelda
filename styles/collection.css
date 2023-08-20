@@ -46,16 +46,6 @@
   margin: 5px 0;
 }
 
-.collection .game-card .rating {
-  display: flex;
-  align-items: center;
-}
-
-.collection .game-card .rating p {
-  margin: 0;
-  margin-right: 5px;
-}
-
 .collection .game-card .btn-container {
   display: flex;
   justify-content: flex-end;
@@ -70,11 +60,9 @@
   border-radius: 4px;
 }
 
-/* Rating stars */
-.collection .game-card .rating span {
-  font-size: 18px;
-  color: #ffd700; /* Gold color for stars */
-  margin: 0 2px;
-}
 
-/* Add more styling rules as needed */
+.completed-game p:hover {
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
+}

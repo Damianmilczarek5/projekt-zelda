@@ -133,3 +133,21 @@ form button:active{
 .content main{
 	margin-top: 50px;
 }
+
+.password-toggle {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#togglePassword input[type="checkbox"] {
+    margin-right: 5px;
+	margin-top: 50px;
+}
+
+.password-toggle label {
+    cursor: pointer;
+
+}

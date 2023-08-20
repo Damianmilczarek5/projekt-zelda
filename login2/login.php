@@ -22,8 +22,10 @@
 		<label>Username</label>
 		<input type="text" name="username">
 
-		<label>Password</label>
-		<input type="text" name="password">
+		<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<div class="password-toggle">
+    <label for="togglePassword">Show Password</label>
 
 		<button type="submit" name="submit">Log in</button>
 
@@ -33,5 +35,6 @@
 		<p>Not registered yet? <a href="register.php">Click here to register</a></p>
 	</form>
 
+	<script src="register.js"></script>
 </body>
 </html>

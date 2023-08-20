@@ -13,6 +13,6 @@
 </div>
 
 <script src="../scripts.js"></script>
-<script src="test1.js"></script>
+<script src="completed.js"></script>
 </body>
 </html>

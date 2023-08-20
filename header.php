@@ -22,9 +22,9 @@
     <div class="user-info">
     <span class="username">
             <?php if (isUserLoggedIn()) : ?>
-                <h2>Welcome <?php echo $currentUser['username'];?></h2>
-                <h2>your id is : <?php echo $currentUserId;    ?> </h2>
-                <a href="profile.php"><img id="profilePic" src="./images/profile/<?php echo $currentUser['profilePicture']; ?>" alt="User Avatar" class="avatar"></a>
+                <h2>Welcome <?php echo $currentUser['username'];?>   
+       <a href="profile.php"><img id="profilePic" src="./images/profile/<?php echo $currentUser['profilePicture']; ?>" alt="User Avatar" class="avatar"></a>
+</h2>
             <?php endif; ?>
         </span>
     </div>

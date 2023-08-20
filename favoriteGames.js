@@ -1,12 +1,12 @@
 async function fetchGameDetails(gameId) {
-    const response = await fetch(`test2.php?id=${gameId}`);
+    const response = await fetch(`gameDetails.php?id=${gameId}`);
     const gameDetails = await response.json();
     return gameDetails;
 }
 
 async function fetchFavoriteGames() {
     const response = await fetch("getFavorite.php");
-    const favoriteGames = await response.json();
+    const favoriteGames = await response.json();    
     return favoriteGames;
 }
 
@@ -48,15 +48,18 @@ async function displayFavoriteGames() {
             const gameContainer = document.createElement("div");
             gameContainer.classList.add("favorited-game");
 
-            // Display the game image
+            const gameLink = document.createElement("a");
+            gameLink.href = `game_details.php?id=${gameDetails.id}`;
+
             const gameImage = document.createElement("img");
             gameImage.src = gameDetails.image;
-            gameContainer.appendChild(gameImage);
+            gameLink.appendChild(gameImage);
 
-            // Display the game name
             const gameName = document.createElement("p");
             gameName.textContent = gameDetails.name;
-            gameContainer.appendChild(gameName);
+            gameLink.appendChild(gameName);
+
+            gameContainer.appendChild(gameLink);
 
             // Create a delete button
             const deleteButton = document.createElement("button");

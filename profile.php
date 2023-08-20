@@ -21,12 +21,15 @@
          <a id="logOut" href="?logout">Log out</a>	
          </div>  
 </div>         
+
+
     
 <div id="favorite-games"></div>
 
 
 </div>
 <script src="favoriteGames.js"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>

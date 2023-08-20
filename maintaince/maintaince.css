@@ -1,0 +1,13 @@
+:root {
+    --green: rgb(22, 54, 43);
+    --gold: rgba(224, 213, 125, 1) 
+  }
+  
+  body {
+      font-family: Futura,Trebuchet MS,Arial,sans-serif;  
+       background-color: var(--green);
+    color: var(--gold);
+    margin: 0;
+    padding: 0;
+  }
+

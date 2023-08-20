@@ -66,8 +66,8 @@
     "id": 7,
     "username": "Kacper2",
     "password": "$2y$10$13hOfPCesy.jSTeyEYzHNe6m95VfozVuXWrs0qtXnoAPqHZpBY.dO",
-    "favoriteGames": [6, 14],
-    "completedGames": [14],
+    "favoriteGames": [6, 1, 13],
+    "completedGames": [14, 13, 2, 18],
     "ratedGames": [],
     "profilePicture": "dog1.jpg"
   }

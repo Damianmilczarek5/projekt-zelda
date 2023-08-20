@@ -59,12 +59,9 @@ flex-direction: column;
 
 #favorite-games {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-#completed-games {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+
     #profile-picture {
     width: 200px;
     height: 200px;
@@ -79,20 +76,15 @@ flex-direction: column;
 width: max-content;
 height: max-content;
 }    
-
-#favorite1 {
-position: relative;
+            
+.favorited-game p:hover {
+  color: rgba(255, 239, 158, 1);
+  text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+  transition: color 0.5s, text-shadow 0.5s;
 }
 
-#favorite2 {
-    position: relative;
-    }
-
-    #favorite3 {
-        position: relative;
-        }
-
-        #favorite4 {
-            position: relative;
-            }
-
+a:hover {
+        color: rgba(255, 239, 158, 1);
+        text-shadow: 0 0 10px rgba(255, 239, 158, 1);
+        transition: color 0.5s, text-shadow 0.5s;
+}          
